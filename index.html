@@ -4,7 +4,9 @@
 <head>
         <title>Ayuda a un peludo</title>
         <style>
-            * {font-family: fantasy'Arial';}
+        .barra{border: 1px; border-radius: initial; color: black; 
+        }
+        .nav{display: inline; list-style: none;}
         h1,
         h2,
         p,
@@ -15,7 +17,7 @@
         }
 
         p {
-            font-size: 1.6rem;
+            font-size:medium;
             justify-content: center;
         }
 
@@ -24,14 +26,29 @@
             margin-left: 300px;
             font-size: medium;
         }
-        table {margin-left: 100px}
+        table{
+            margin-left: 100px;
+        }
     </style>
 </head>
 
 <body>
+    <header>
+        <nav class="barra">
+            <ul>
+                <li class="nav">Inicio</li>
+                <li class="nav">Gatos</li>
+                <li class="nav">Perros</li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div>
     <h1>ONG - AYUDA A UN PELUDO</h1>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, magnam quam. Sed molestias autem sit
         enim tenetur quasi doloribus architecto ipsa aut magnam, saepe porro iure eligendi assumenda natus illum.</p>
+    </div>
+    <div>
     <h2>Nuestros integrantes:</h2>
     <ul>
         <li>Persona 1 - cargo 1</li>
@@ -39,7 +56,9 @@
         <li>Persona 3 - cargo 3</li>
         <li>Persona n - cargo n</li>
     </ul>
-    <h2>Nuestras secciones de ayuda:</h2>
+    </div>
+    <div>
+        <h2>Nuestras secciones de ayuda:</h2>
     <table>
         <thead>
 
@@ -50,7 +69,7 @@
                     <img src="img/gato.jpg" width="50%" height="50%">
                 </th>
                 <th>
-                    <a href="gato.html">Gatos</a>
+                    <a target="_self" href="gato.html">Gatos</a>
                 </th>
 
             </tr>
@@ -59,12 +78,15 @@
                     <img src="img/perro.jpg" width="50%" height="50%">
                 </th>
                 <th>
-                    <a href="perro.html">Perros</a>
+                    <a target="_self" href="perro.html">Perros</a>
 
                 </th>
             </tr>
         </tbody>
     </table>
+
+    </div>
+    
 </body>
 
 </html>
