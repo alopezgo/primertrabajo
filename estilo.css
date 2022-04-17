@@ -1,26 +1,61 @@
-.nav {
-    background-color:rgb(20, 172, 146);
-    overflow:hidden;
+body { font-family: sans-serif, Courier, monospace;
+        background-color:#2A2726;
+}
+
+.menu {
+    background-color:#2A2726;
+    width: 20%;
+    height: 100%;
+    float: inline-start;
+    padding: 50px;
+    margin: 20px;
 }
 
   /* Style the links inside the navigation bar */
-.nav a{
-    float:left;
-    color:rgb(247, 239, 239);
+.menu a{
+    color:rgb(248, 242, 242);
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
 /* Change the color of links on hover */
-.nav a:hover {
-    background-color: rgb(185, 156, 156);
-    color: rgb(97, 61, 61);
+.menu a:hover {
+    color: #d6beb7;
   }
+
+  .container {
+    width: 80%;
+    height: 100%;
+    float:inline-start;
+    color: rgb(238, 240, 245);
+    padding: 50px;
+    margin: 20px;
+
+  }
+
+  article {
+    height: 25%;
+    align-items: center;
   
-  /* Add a color to the active/current link */
-  .nav a.activo {
-    background-color: #855f5f;
-    color: rgb(247, 239, 239);
+  }
+  .primer{
+    background-color: rgb(16, 212, 238);
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .segundo{
+    background-color: rgb(238, 234, 16);
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .tercero{
+    background-color: rgb(238, 134, 16);
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  .cuarto{
+    background-color: rgb(238, 16, 16);
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
