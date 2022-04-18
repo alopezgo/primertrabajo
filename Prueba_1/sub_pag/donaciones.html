@@ -32,20 +32,29 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="../sub_pag/nosotros.html">Nosotros</a>
               </li>
               
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../sub_pag/tienda.html">Tienda</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tienda
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="tienda_bandanas.html">Bandanas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="tienda_correas.html">Correas</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="tienda_identifica.html">Identificadores</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="donaciones.html">Donaciones</a>
+                <a class="nav-link" aria-current="page" href="donaciones.html">Donaciones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../sub_pag/contacto.html">Contacto</a>
+                <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
               </li>
             </ul>
             <span class="navbar-text">
@@ -56,10 +65,77 @@
       </nav>
     </header>
 
+    <!-- Formulario Donaciones-->
+    <main>
+      <section class="py-3 text-center container">
+          <div class="row py-lg-3">
+            <div class="col-lg-6 col-md-8 mx-auto">   
+              <h1 class="fw-light">Donaciones</h1>
+              <p class="lead text-muted">Si te identificas con nuestra misión y quieres ayudarnos. 
+              <br>  
+              Hazlo donando a nuestra ONG, llenando el siguiente formulario.</p>
+            </div>
+          </div>
+      </section> 
 
-      
-       
- 
+    <!--Card img ONG-->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://blog.edufors.com/wp-content/uploads/2018/04/AlertaAnimales.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Animales rescatados</h5>
+            <p class="card-text">Muchas de muestras mascotas han sido rescatadas de las calles, también desde sitios eriazos.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://fotografias.lasexta.com/clipping/cmsimages01/2021/08/30/DAECDC39-2C22-4C60-815A-44958BE1143E/98.jpg?crop=607,342,x0,y145&width=1900&height=1069&optimize=low&format=webply" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Animales curados</h5>
+            <p class="card-text">Muchos animales enfermos o accidentados han sido curados por nuestra ONG.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://blog.oxfamintermon.org/wp-content/uploads/2018/06/voluntariado-con-animales-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Animales rehabilitados</h5>
+            <p class="card-text">Muchos animales discapacitados han sido rehabilitados con recursos escazos por nuestra ONG.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Pie de página-->
+    <footer class="text-center text-white fixed-bottom" style="background-color: #21081a;">
+      <!-- Grid container -->
+      <div class="container p-4"></div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
       
        <!-- Bootstrap Bundle with Popper -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
