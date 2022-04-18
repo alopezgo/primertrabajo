@@ -32,34 +32,36 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="../sub_pag/nosotros.html">Nosotros</a>
               </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Tienda
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="tienda_bandanas.html">Bandanas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="tienda_correas.html">Correas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="tienda_identifica.html">Identificadores</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../sub_pag/tienda.html">Tienda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="donaciones.html">Donaciones</a>
+                <a class="nav-link active" aria-current="page" href="donaciones.html">Donaciones</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
               </li>
             </ul>
             <span class="navbar-text">
-                Con tu compra estarás ayudando a la Fundación Callejeritos Chile 
-            </span>
+              <div class="dropdown">
+    <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+      <strong>Persona1</strong>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-light text-white" aria-labelledby="dropdownUser1">
+      <li><a class="dropdown-item" href="../sub_pag/carrito.html">Mi carrito</a></li>
+      <li><a class="dropdown-item" href="#">Perfil</a></li>
+      <li><a class="dropdown-item" href="#">Configuración</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+    </ul>
+  </div>
+          </span>
           </div>
         </div>
       </nav>
@@ -84,23 +86,72 @@
         <div class="card h-100">
           <img src="https://blog.edufors.com/wp-content/uploads/2018/04/AlertaAnimales.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Animales rescatados</h5>
+            <h5 class="card-title">Fundación Callejeritos</h5>
             <p class="card-text">Muchas de muestras mascotas han sido rescatadas de las calles, también desde sitios eriazos.</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Fundación Callejeritos</small>
+            <small class="text-muted">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Ver más
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Fundación Callejeritos</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </small>
           </div>
         </div>
+        
       </div>
       <div class="col">
         <div class="card h-100">
           <img src="https://fotografias.lasexta.com/clipping/cmsimages01/2021/08/30/DAECDC39-2C22-4C60-815A-44958BE1143E/98.jpg?crop=607,342,x0,y145&width=1900&height=1069&optimize=low&format=webply" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Animales curados</h5>
+            <h5 class="card-title">Fundación Alma de Gato</h5>
             <p class="card-text">Muchos animales enfermos o accidentados han sido curados por nuestra ONG.</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Fundación Alma de Gato</small>
+            <small class="text-muted">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Ver más
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Fundación Callejeritos</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </small>
           </div>
         </div>
       </div>
@@ -108,11 +159,35 @@
         <div class="card h-100">
           <img src="https://blog.oxfamintermon.org/wp-content/uploads/2018/06/voluntariado-con-animales-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Animales rehabilitados</h5>
+            <h5 class="card-title">Fundación Patitas pequeñasFundación Patitas pequeñas</h5>
             <p class="card-text">Muchos animales discapacitados han sido rehabilitados con recursos escazos por nuestra ONG.</p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Fundación Patitas pequeñas</small>
+            <small class="text-muted">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                Ver más
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Fundación Callejeritos</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      ...
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </small>
             <br>
           </div>
         </div>
