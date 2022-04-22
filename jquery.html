@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset='UTF-8'>
+<title> </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(
+        function(){
+            $("#sumar").click(function(){
+                var a = $("#num1").val();
+                var b = $("num2").val();
+                console.log(a);
+                console.log(b);
+                var sum = parseInt(a) + parseInt(b);
+                if(isNaN(sum)){
+                    alert("error");
+                }else{
+                    //alert("El resultado es: " + sum);}
+                    $(".resum").text("Su resultado es: " + sum);
+                
+                
+                })
+            }
+        );
+</script>
+</head>
+
+<body>
+    Ingrese su nombre:
+    <input type="text" name="num1" id="num1">
+    <br>
+    Ingrese su apellido:
+    <input type= "text" name="num2" id="num2">
+    <br>
+    <input type="button" id="sumar" value= "Clic aquí!"> 
+    <br>
+    Su resultado es:
+    <!--input type="text" name="resum" class="resum"-->
+    <p class="resum"></p>
+</body>
+
+</html>
