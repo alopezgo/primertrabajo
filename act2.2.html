@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Actividad 2.2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script>
+      $(document).ready(function () {});
+    </script>
+  </head>
+
+  <body>
+    <fieldset>
+      <label for="nombre">Nombre</label>
+      <input type="text" name="txt1" id="txt1" required />
+      <br />
+
+      <label for="apellidop">Apellido paterno</label>
+      <input type="text" name="txt2" id="txt2" required />
+      <br />
+
+      <label for="apellidom">Apellido materno</label>
+      <input type="text" name="txt3" id="txt3" required />
+      <br />
+
+      <label for="email">Correo</label>
+      <input type="email" name="mail" form="mail" required />
+      <br />
+
+      <div>
+        <legend>Elige documento de identificación</legend>
+        <input type="checkbox" name="rut" id="rut" value="rut" required />
+        <label for="rut">Rut</label>
+        <br />
+
+        <input type="checkbox" name="pasaporte" id="pasaporte" value="pasaporte"/>
+        <label for="rut">Pasaporte</label>
+      </div>
+      <br />
+      
+      <label for="phone">Teléfono</label>
+      <input type="text" name="phone" id="phone">
+      <br />
+
+      <label for="city">Ciudad</label>
+      <input type="text" name="city" id="city">
+      <br />
+
+      <label for="comment">Comentarios</label>
+      <textarea name= "comment" id="comment" minlength="50"></textarea>
+      <br />
+
+      <input type="button" id="sumar" value="Clic aquí!" />
+      <br />
+
+    </fieldset>
+  </body>
+</html>
