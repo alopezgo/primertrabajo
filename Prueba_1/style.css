@@ -121,7 +121,7 @@ main #bandanas #correas #identificadores {
       background-color: #2A3D45;
   }
 
-  .contaier {
+  .container {
       background-color: #DDC9B4;
       padding: 20px;
       color: #2A3D45;
@@ -129,7 +129,7 @@ main #bandanas #correas #identificadores {
       display: none;
   }
 
-  .contaier>.block {
+  .container>.block {
       padding: 20px;
   }
 
