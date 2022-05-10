@@ -67,6 +67,32 @@
       </nav>
     </header>
 
+    <section class="clima" onload="onLoad()">
+      <div id="loader" class="loader">Loading...</div>
+      <div id="container" class="contaier">
+        <div class="block">
+          <div id="location"></div>
+          <div id="date"></div>
+          <div id="description"></div>
+        </div>
+        <div class="block">
+          <div class="information-container">
+            Temperatura
+            <div class="information" id="temperature"></div>
+          </div>
+          <div class="information-container">
+            Humedad
+            <div class="information" id="humidity"></div>
+          </div>
+          <div class="information-container">
+            Presión
+            <div class="information" id="pressure"></div>
+          </div>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </section>
+
     <!-- Formulario Donaciones-->
     <main>
       <section class="py-3 text-center container">
