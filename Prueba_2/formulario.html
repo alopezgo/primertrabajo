@@ -20,7 +20,7 @@
     <script>
         $(document).ready(function () {
             $("#error").hide();
-            $("#form").validate()
+
             $("#form").submit(function () {
                 var mensaje = "";
                 if ($("#nom").val().trim().lenght == 0) {
@@ -126,7 +126,7 @@
                     <p class="note">Campos marcados con * son obligatorios</p>
                         <label for="1nomb" class="form-label">Nombres :*</label>
                         <div class="col-md-4">
-                        <input type="text" class="form-control" id="nom" name="1nomb" placeholder="Juanita"
+                        <input type="text" class="form-control" id="nom" name="nom" placeholder="Juanita"
                             minlength="3" required>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                     
                         <label for="4email" class="form-label">Ingresa tu correo :*</label>
                     <div class="col-md-4">
-                        <input type="email" class="form-control" id="mail" name="4email" placeholder="hola@correo.com"
+                        <input type="email" class="form-control" id="mail" name="mail" placeholder="hola@correo.com"
                             pattern=".+@.+\.com|.+@.+\.cl" minlength="12" required>
                     </div>
                 </div>
