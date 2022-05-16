@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Títulod del sitio -->
+    <title>Formulario de contacto</title>
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script>
+        $(document).ready(function () {
+            $("#error").hide();
+            $("#form").validate()
+            $("#form").submit(function () {
+                var mensaje = "";
+                if ($("#nom").val().trim().lenght == 0) {
+                    mensaje = "Campo en blanco";
+                }
+                if ($("#ape").val().trim().lenght == 0) {
+                    mensaje = "Campo en blanco";
+                }
+                if ($("#tel").val().trim().lenght == 0) {
+                    mensaje = "Campo en blanco";
+                }
+                if ($("#mail").val().trim().lenght == 0) {
+                    mensaje = "Campo en blanco";
+                }
+                if (mensaje != "") {
+                    $("#error").html(mensaje);
+                    $("#error").show();
+                    event.preventDefault();
+                }
+                alert("Formulario enviado")
+            });
+
+        })
+
+    </script>
+
+
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Navbar menú-->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #F5B041;">
+            <div class="container-fluid">
+                <h4 class="navbar-brand">
+                    <svg src="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hearts"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M4.931.481c1.627-1.671 5.692 1.254 0 5.015-5.692-3.76-1.626-6.686 0-5.015Zm6.84 1.794c1.084-1.114 3.795.836 0 3.343-3.795-2.507-1.084-4.457 0-3.343ZM7.84 7.642c2.71-2.786 9.486 2.09 0 8.358-9.487-6.268-2.71-11.144 0-8.358Z" />
+                    </svg> Tus Mascotas Store
+                </h4>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../sub_pag/nosotros.html">Nosotros</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../sub_pag/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../sub_pag/donaciones.html">Donaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../sub_pag/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                                id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="https://github.com/mdo.png" alt="" width="32" height="32"
+                                    class="rounded-circle me-2">
+                                <strong>Persona1</strong>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-light text-white" aria-labelledby="dropdownUser1">
+                                <li><a class="dropdown-item" href="../sub_pag/carrito.html">Mi carrito</a></li>
+                                <li><a class="dropdown-item" href="#">Perfil</a></li>
+                                <li><a class="dropdown-item" href="#">Configuración</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </span>
+    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Formulario de Contacto-->
+    
+    <main id="formulario">
+    <div class="container-fluid">
+        <div class="row row-cols-2">
+            <form id="form" action="" method="post" class="row g-4 needs-validation">
+                <div class="form-group">
+                    <legend>Formulario de contacto</legend>
+                    <p class="note">Campos marcados con * son obligatorios</p>
+                        <label for="1nomb" class="form-label">Nombres :*</label>
+                        <div class="col-md-4">
+                        <input type="text" class="form-control" id="nom" name="1nomb" placeholder="Juanita"
+                            minlength="3" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                        <label for="2apell" class="form-label">Apellidos :</label>
+                        <div class="col-md-4">
+                        <input type="text" class="form-control" id="ape" name="2apell" placeholder="González"
+                            minlength="3">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-4">
+                        <label for="3telef" class="form-label">Teléfono de contacto :</label>
+                        <input type="tel" class="form-control" id="tel" name="3telef" placeholder="(569) 87654321"
+                            pattern="\([0-9]{3}\) [0-9]{8}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    
+                        <label for="4email" class="form-label">Ingresa tu correo :*</label>
+                    <div class="col-md-4">
+                        <input type="email" class="form-control" id="mail" name="4email" placeholder="hola@correo.com"
+                            pattern=".+@.+\.com|.+@.+\.cl" minlength="12" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <label for="5region" class="form-label">Seleccciona Región</label>
+                        <select class="form-control" name="5region" id="region">
+                            <option selected disabled value="">seleccionar...</option>
+                            <option value="1">Arica</option>
+                            <option value="2">Iquique</option>
+                            <option value="3">Antofagasta</option>
+                            <option value="4">Coquimbo</option>
+                            <option value="5">Valparaíso</option>
+                            <option value="6">Metropolitana</option>
+                            <option value="6">O'Higgins</option>
+                            <option value="6">Maule</option>
+                            <option value="6">Ñuble</option>
+                            <option value="6">Concepción</option>
+                            <option value="6">Araucanía</option>
+                            <option value="6">Los Ríos</option>
+                            <option value="6">Los Lagos</option>
+                            <option value="6">Aysén</option>
+                            <option value="6">Magallanes</option>
+                        </select>
+                    </div>
+                    <br>
+                </div>
+                <div class="form-group">
+                <div class="col-12">
+                    <input type="submit" class="btn btn-primary" id="enviar" value="Enviar">
+                    <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+                </div>
+                <div id="error" class="alert alert-danger" role="alert"></div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <img src="https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/NVWQSYGX3RC7ZBEHLPLDVXA3PU.jpg"
+                class="d-block w-100">
+        </div>
+        
+    </div>
+    </main>
+    <div class="fixed-bottom">
+        <FOOTER>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <p class="text-center text-white">Tusmascotas.com Todos los Derechos Reservados</p>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </FOOTER>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
