@@ -20,7 +20,25 @@
       $(document).ready(function(){
         $('#nav-btn1').on('click', function(){
           $('.navbar li').removeClass('active');
-          $("#central").load('contacto.html');
+          $("#central").load('nosotros.html');
+          return false;
+        });
+
+        $('#nav-btn2').on('click', function () {
+          $('.navbar li').removeClass('active');
+          $("#central").load('tienda.html');
+          return false;
+        });
+        
+        $('#nav-btn3').on('click', function () {
+          $('.navbar li').removeClass('active');
+          $("#central").load('donaciones.html');
+          return false;
+        });
+
+        $('#nav-btn4').on('click', function () {
+          $('.navbar li').removeClass('active');
+          $("#central").load('contacto.php');
           return false;
         });
       })
@@ -81,7 +99,8 @@
     </header>
 
     <!--Carrousel-->
-
+<div id="central">
+  <div id="central-content">
     <section class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -131,6 +150,9 @@
             </button>
           </div>
     </section>
+    </div>
+<div>
+
       <br>
     <FOOTER>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
