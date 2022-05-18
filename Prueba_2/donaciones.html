@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="descripcion" content="Pagina princiapal de la tienda de articulos para mascota">
-    <meta name="autor" content="Andrea Lopez y Francisco Yañez">
-    <link rel = "stylesheet" href="../style.css">
+    <link rel = "stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
@@ -14,6 +13,15 @@
     
     <!-- Títulod del sitio -->
     <title>Tus Mascotas Store</title>
+
+    <script>
+      $(document).ready(function(){
+        $("#btn1modal").click(function(){
+            $("#modal1").modal('show');
+        });
+    });
+
+    </script>
 
 </head>
 
@@ -91,12 +99,12 @@
           </div>
           <div class="card-footer">
             <small class="text-muted">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              <button type="button" id="btn1modal" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                 Ver más
               </button>
               
               <!-- Modal -->
-              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -109,7 +117,7 @@
                       ...
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      <button type="button" id="btn2modal" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -128,12 +136,12 @@
           </div>
           <div class="card-footer">
             <small class="text-muted">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              <button type="button" id="btn3modal"class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                 Ver más
               </button>
               
               <!-- Modal -->
-              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -146,7 +154,7 @@
                       ...
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      <button type="button" id="btn4modal"class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
@@ -164,12 +172,12 @@
           </div>
           <div class="card-footer">
             <small class="text-muted">
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+              <button type="button" id="btn5modal" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
                 Ver más
               </button>
               
               <!-- Modal -->
-              <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -182,7 +190,7 @@
                       ...
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                      <button type="button" id="btn6modal" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>
