@@ -18,27 +18,24 @@
     <title>Tus Mascotas Store</title>
     <script>
       $(document).ready(function(){
-        $('#nav-btn1').on('click', function(){
+        $('#nav-btn1').on('click', function () {
           $('.navbar li').removeClass('active');
-          $("#central").load('nosotros.html');
+          $("#recargar").load('nosotros.html');
           return false;
         });
-
-        $('#nav-btn2').on('click', function () {
+          $('#nav-btn2').on('click', function () {
           $('.navbar li').removeClass('active');
-          $("#central").load('tienda.html');
+          $("#recargar").load('tienda.html');
           return false;
         });
-        
-        $('#nav-btn3').on('click', function () {
+          $('#nav-btn3').on('click', function () {
           $('.navbar li').removeClass('active');
-          $("#central").load('donaciones.html');
+          $("#recargar").load('donaciones.html');
           return false;
         });
-
-        $('#nav-btn4').on('click', function () {
+        $('#nav-btn4').on('click', function(){
           $('.navbar li').removeClass('active');
-          $("#central").load('contacto.php');
+          $("#recargar").load('contacto.html');
           return false;
         });
       })
@@ -99,7 +96,7 @@
     </header>
 
     <!--Carrousel-->
-<div id="central">
+<div id="recargar">
   <div id="central-content">
     <section class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
